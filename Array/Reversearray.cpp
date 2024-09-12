@@ -1,13 +1,11 @@
 #include<iostream>
 using namespace std;
-void revrese(int arr[],int i){
+void revrese(int arr[],int n,int i){
 int s = i;
-int e = arr.size()-1;
+int e = n-1;
 while(s<=e)
-{
   swap(arr[s++],arr[e--]);
 }
-
 void display(int arr[],int n)
 {
   for(int i=0;i<n;i++)
@@ -25,7 +23,7 @@ int main()
 
   display(arr,n);
   
-  revrese(arr,0);
+  revrese(arr,n,0);
 
   display(arr,n);
   return 0;
