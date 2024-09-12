@@ -7,6 +7,12 @@ void display(int arr[], int n) {
         cout << arr[i] << " ";
     cout << endl;
 }
+void revrese(int arr[],int n,int i){
+int s = i;
+int e = n-1;
+while(s<=e)
+  swap(arr[s++],arr[e--]);
+}
 
 int main() {
     int n;
@@ -26,6 +32,10 @@ int main() {
 
     vector<int> temp;
     int j = n - d;
+
+    //reverse(arr,0,n-d-1)
+    //revrese(arr,n-d,n-1)
+    //revrese(arr,0,n-1)
     
     // Collect last d elements 
     for (int i = j; i < n; i++) {
