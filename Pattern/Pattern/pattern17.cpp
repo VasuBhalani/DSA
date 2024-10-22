@@ -1,10 +1,10 @@
 /*
-     A     
-    ABA    
-   ABCBA   
-  ABCDCBA  
- ABCDEDCBA 
-ABCDEFEDCBA
+0      A     
+1     ABA    
+2    ABCBA  4/2 + 1 = 3 sudhi  
+3   ABCDCBA 6/2 + 1 = 4 sudi  
+4  ABCDEDCBA 
+5 ABCDEFEDCBA
 
 */
 
@@ -15,37 +15,22 @@ int main()
     int n;
     cout<<"Enter the numbers of row : ";
     cin>>n;
-    char ch='A';
-     
-     /*
-     5
-     4
-     3
-     2
-     1
-     0
-     */
-
     for(int i=0;i<n;i++)
     {
         //space
         for(int j=0;j<n-i-1;j++)
-        {
             cout<<" ";
-        }
-        //left 
-        for(int l=0;l<i;l++)
-        cout<<char(ch+l);
-
-        // strait line
-        cout<<char(ch+i);
+            
+        char ch='A'; 
+        int breakpoint = (2*i/2)+1; 
         
-        //right 
-        for(int r=0;r<i;r++)
-        cout<<char(ch+i-r-1);
-
+        for(int k = 1 ; k<=2*i+1; k++){
+         cout<<ch;
+         if(k<breakpoint) ch++;
+         else ch--;
+        }     
+        
         cout<<endl;
-         
     }
 
 }
