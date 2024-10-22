@@ -19,25 +19,20 @@ int main()
     cout<<"Enter the numbers of row : ";
     cin>>n;
      
-    for(int i=n; i>0; i--) 
-    {
-        //left side
-        for(int j=0;j<=n-i;j++)
-        {
-           cout<<j+1;
-        }
-        //space
-        for(int k=0;k<2*i-2;k++)
-        {
-            cout<<" ";
-        }
-        //right side
-        for(int l=0;l<=n-i;l++)
-        {
-           cout<<n-i-l+1;   
-        }cout<<endl; 
-
-    }
+     for(int i=1; i<=n; i++)
+  {
+      
+      for(int j=0; j<i ; j++)
+      cout<<j+1;
+      
+      for(int st=0; st<2*n-2*i; st++)
+      cout<<" ";
+      
+      for(int k=i;k>0;k--)
+      cout<<k;
+      
+      cout<<endl;      
+  }
     
     return 0;
 }
