@@ -15,15 +15,15 @@ int main()
     int n;
     cout<<"Enter the number of rows : "; 
     cin>>n;
-    int k=0;
     char ch='A';  
-    for(int i=n;i>0;i--)
+    for(int i=0;i<n;i++)
     {
-        for(int j=0;j<i;j++)
-        cout<<char(ch+j)<<" ";
+        for(int j=0;j<n-i;j++)
+        cout<<char(ch+j);
 
         cout<<endl;
     }
+
 
 
     return 0;
