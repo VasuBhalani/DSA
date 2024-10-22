@@ -22,24 +22,14 @@ int main()
     cout<<"Enter the numbers of row : ";
     cin>>n;
 
-    // Top
-    for(int i=0;i<n;i++)
+    for(int i=1;i<=2*n-1;i++)
     {
-        for(int j=0;j<=i;j++)
+        int st = i;
+        if(i>n) st = 2*n - i;
+        for(int j=1;j<=st;j++)
         {
             cout<<"*";
-        }
-        cout<<endl;
-    }
-
-    //Bottom
-    for(int i=n-1;i>0;i--)
-    {
-        for(int j=0;j<i;j++)
-        {
-           cout<<"*";
-        }
-        cout<<endl;
+        }cout<<endl;
     }
 
 }
