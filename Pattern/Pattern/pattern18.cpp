@@ -1,10 +1,10 @@
 /*
-F
-E F
-D E F
-C D E F
-B C D E F
-A B C D E F
+5    F 
+4    E F
+3    D E F
+2    C D E F
+1    B C D E F
+0    A B C D E F
 */
 #include<iostream>
 using namespace std;
